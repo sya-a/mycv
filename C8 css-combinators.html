@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <style>
+    /* Style <p> elements that are descendants of <div> elements */
+    div p {
+      color: red;
+    }
+
+    /* Style <p> elements that are immediate children of <div> elements */
+    div > p {
+      color: green;
+    }
+  </style>
+
+  <body>
+    <div>
+      <p>This is a paragraph inside a div element.</p>
+      <p>This is another paragraph inside a div element.</p>
+      <span
+        ><p>
+          This a paragraph inside a span element, inside a div element.
+        </p></span
+      >
+    </div>
+    <p>This is a paragraph, not inside a div element.</p>
+    <p>This is another paragraph, not inside a div element.</p>
+  </body>
+</html>
